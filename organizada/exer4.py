@@ -9,3 +9,14 @@ while contador < 6:
     contador = contador + 1 
 
 print(maior)
+
+
+#for
+
+maior = 0
+for contador in range(0,6):
+    numero = int(input("digite um valor"))
+    if maior < numero:
+        maior = numero 
+
+        print(maior)
