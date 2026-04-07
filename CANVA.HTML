@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+        canvas
+    </title>
+    <link rel="stylesheet" href="cores.css">
+    <body>
+        <canvas id="canvas" width="400" height="400"></canvas>
+        <script>
+            let canvas = document.getElementById("canvas")
+            abc = canvas.getContext("2d");
+            linha = canvas.getContext("2d");
+            linha1 = canvas.getContext("2d");
+            abc.beginPath();
+            abc.lineWidth = 2;
+            abc.fillStyle = 'red';
+            abc.strokeStyle = 'red';
+            abc.fillRect(0,0,50,50);
+            abc.strokeRect(0,0,50,50);
+            abc.closePath();
+
+            abc.beginPath();
+            abc.lineWidth = 2;
+            abc.fillStyle = 'blue';
+            abc.strokeStyle = 'red';
+            abc.fillRect(350,0,50,50);
+            abc.closePath();
+
+            abc.beginPath();
+            abc.lineWidth = 2;
+            abc.fillStyle = 'yellow';
+            abc.fillRect(0,350,50,50);
+            abc.closePath();
+
+            abc.beginPath();
+            abc.lineWidth = 2;
+            abc.fillStyle = 'green';
+            abc.fillRect(350,350,50,50);
+            abc.closePath();
+
+            linha.beginPath();
+            linha.moveTo(0,0);
+            linha.lineTo(400,400);
+            linha.stroke();
+            linha.closePath();
+
+            linha1.beginPath();
+            linha1.moveTo(400,0);
+            linha1.lineTo(0,400);
+            linha1.stroke();
+            linha1.closePath();
+
+
+            linha.beginPath();
+            linha.strokeStyle('green')
+            linha.moveTo(200,200);
+            linha.lineTo(200,200);
+            linha.stroke();
+            linha.closePath();
+
+
+            
+
+
+        
+
+
+
+        </script>
+    </body>
+</head>
+</html>
